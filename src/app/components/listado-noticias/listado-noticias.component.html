@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let noticias of listNoticias">
+    <div class="card">
+     <!--<img src="..." class="card-img-top" alt="...">--> 
+      <div class="card-body">
+        <span class="badge bg-primary mb-1">{{  noticias.source.name  }}</span>
+        <h5 class="card-title">{{ noticias.title }}</h5>
+        <p class="card-text">{{ noticias.author }}</p>
+        <a [href]="noticias.url" class="btn btn-primary btn-block" target="_blank">Ver noticia</a>
+      </div>
+    </div>
+  </div>
+</div>
